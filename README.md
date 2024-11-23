@@ -1,24 +1,16 @@
-# README
+# Food Log App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<img src="https://github.com/SapporoAlex/Food-log-app/blob/main/previews/fl1.jpg">
+<i>main page</i>
+<br>
+<img src="https://github.com/SapporoAlex/Food-log-app/blob/main/previews/fl2.jpg">
+<i>Create page</i>
+<br>
 
-Things you may want to cover:
+## Functions
+- Stores meal dietary information
+- Allows CRUD operations
+- Can be redesigned for recipes etc.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Author
+Alex McKinley
