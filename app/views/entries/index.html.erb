@@ -7,11 +7,11 @@
     <% @entries.each do |entry| %>
     <div class="entry-box">
       <div class="entry-details">
-        <p> Meal: <%= entry.meal_type %></p>
-        <p><%= entry.calories %> Calories</p>
-        <p><%= entry.proteins %>g Proteins</p>
-        <p><%= entry.carbohydrates %>g Carbohydrates</p>
-        <p><%= entry.fats %>g Fats</p>
+        <p style="font-size: 30px; margin-bottom: -10px; margin-top: -10px;"><%= entry.meal_type %></p>
+        <p style="font-size: 20px; margin-bottom: -10px;"><%= entry.calories %> Calories</p>
+        <p style="font-size: 20px; margin-bottom: -10px;"><%= entry.proteins %>g Proteins</p>
+        <p style="font-size: 20px; margin-bottom: -10px;"><%= entry.carbohydrates %>g Carbohydrates</p>
+        <p style="font-size: 20px;"><%= entry.fats %>g Fats</p>
       </div>
       <div class="entry-options">
         <p><%= link_to 'Show', entry %></p>
