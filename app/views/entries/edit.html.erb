@@ -1,0 +1,14 @@
+<% content_for :title, "Editing entry" %>
+
+<h1>Editing entry</h1>
+
+<div id="form">
+<%= render "form", entry: @entry %>
+</div>
+
+<br>
+
+<div class="link-section">
+  <p class="link"><%= link_to "Show this entry", @entry %></p>
+  <p class="link"><%= link_to "Back to entries", entries_path %></p>
+</div>

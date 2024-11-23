@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="show-entry">
+<%= render @entry %>
+</div>
+
+<div class="options-section">
+  <%= link_to "Edit this entry", edit_entry_path(@entry), class: "btn-primary" %>
+  <%= link_to "Back to entries", entries_path, class: "btn-primary" %>
+  <%= button_to "Destroy this entry", @entry, method: :delete, class: "btn-primary"%>
+</div>

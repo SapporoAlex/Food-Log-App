@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Foodlog" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="manifest" href="/manifest.json">
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <header>
+    <%= render "shared/header" %>
+  </header>
+
+  <body>
+    <main>
+    <% if notice.present? %>
+      <p style="color: green"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+      <p style="color: red"><%= alert %></p> <!-- Make sure it's alert, not notice -->
+    <% end %>
+
+    <%= yield %>
+    </main>
+  </body>
+  <footer>
+    <%= render "shared/footer" %>
+  </footer>
+</html>

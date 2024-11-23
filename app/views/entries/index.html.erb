@@ -1,0 +1,24 @@
+<div id="entries-page">
+  <h1 class="title">Entries</h1>
+  <div class="link-section">
+    <p class="link"><%= link_to "New entry", new_entry_path %></p>
+  </div>
+  <div class="columns">
+    <% @entries.each do |entry| %>
+    <div class="entry-box">
+      <div class="entry-details">
+        <p> Meal: <%= entry.meal_type %></p>
+        <p><%= entry.calories %> Calories</p>
+        <p><%= entry.proteins %>g Proteins</p>
+        <p><%= entry.carbohydrates %>g Carbohydrates</p>
+        <p><%= entry.fats %>g Fats</p>
+      </div>
+      <div class="entry-options">
+        <p><%= link_to 'Show', entry %></p>
+        <p><%= link_to 'Edit', edit_entry_path(entry) %></p>
+        <p><%= link_to 'Remove', entry, method: :delete, data: { confirm: 'This item will be permanently removed. Please confirm.' } %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
